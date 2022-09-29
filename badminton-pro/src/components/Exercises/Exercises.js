@@ -15,7 +15,6 @@ const Exercises = () => {
 
     const addToInfo = (time) => {
         setExerciseTime(exerciseTime + time);
-        console.log(time);
     }
     
 
@@ -31,7 +30,7 @@ const Exercises = () => {
                         ></Exercise>)
                     }
                 </div>
-                <div className="information-container">
+                <div className="information-container py-3 px-4">
                     <h2 onClick={addToInfo}>Information</h2>
                     <Information exerciseTime={exerciseTime}></Information>
                 </div>

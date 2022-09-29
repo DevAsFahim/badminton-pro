@@ -1,0 +1,25 @@
+.break_time {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.062);
+    background-color: rgb(243, 241, 241);
+    border-radius: 5px;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.break_time span {
+    border: 1px solid orange;
+    height: 40px;
+    width: 40px;
+    border-radius: 1000px;
+    font-size: 14px;
+    font-weight: bold;
+    color: orange;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.break_time span:hover {
+    color: #fff;
+    background-color: orange;
+}
