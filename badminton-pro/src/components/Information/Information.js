@@ -1,13 +1,21 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Information.css'
 import userImg from '../../image/my-image.jpg'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { addToDb, getStoredTime } from '../../utilities/fakedb';
 
 const Information = (props) => {
     const [breakTime, setBreakTime] = useState(0);
+
+    useEffect(() => {
+        const storedTime = getStoredTime();
+        setBreakTime(storedTime)
+    }, [])
+
     const addBreakTime = (time) => {
-        setBreakTime(time)
+        setBreakTime(time);
+        addToDb(time)
     }
     const showToast = () => {
         toast.success("Congratulations! your activity completed.", {
