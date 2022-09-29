@@ -30,8 +30,7 @@ const Exercises = () => {
                         ></Exercise>)
                     }
                 </div>
-                <div className="information-container py-3 px-4">
-                    <h2 onClick={addToInfo}>Information</h2>
+                <div className="information-container">
                     <Information exerciseTime={exerciseTime}></Information>
                 </div>
             </div>

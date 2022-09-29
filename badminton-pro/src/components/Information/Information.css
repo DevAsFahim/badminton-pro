@@ -1,3 +1,10 @@
+.information {
+    position: sticky;
+    top: 0;
+    padding: 30px;
+    background-color: rgb(253, 234, 234);
+    height: 100vh;
+}
 .break_time {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.062);
     background-color: rgb(243, 241, 241);
@@ -22,4 +29,20 @@
 .break_time span:hover {
     color: #fff;
     background-color: orange;
+}
+.exercise_time {
+    margin-top: 30px;
+}
+.exercise_time p {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.information h5 {
+    color: orange;
+    margin-bottom: 15px;
+}
+.exercise_time p strong {
+    font-weight: 500;
 }
