@@ -1,0 +1,8 @@
+.single_card .card{
+    padding: 8px;
+}
+.single_card .card img {
+    height: 145px;
+    object-fit: cover;
+    object-position: center;
+}
