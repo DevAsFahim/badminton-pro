@@ -21,6 +21,9 @@ const Exercises = () => {
     return (
         <div className='exercises'>
             <div className="container">
+                <div className="information-container">
+                    <Information exerciseTime={exerciseTime}></Information>
+                </div>
                 <div className="exercise-container py-5 row row-cols-1 row-cols-md-3 g-4">
                     {
                         exercises.map(exercise => <Exercise 
@@ -29,9 +32,6 @@ const Exercises = () => {
                             addToInfo={addToInfo}
                         ></Exercise>)
                     }
-                </div>
-                <div className="information-container">
-                    <Information exerciseTime={exerciseTime}></Information>
                 </div>
             </div>
         </div>

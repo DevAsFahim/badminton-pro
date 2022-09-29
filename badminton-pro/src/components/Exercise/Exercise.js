@@ -5,7 +5,7 @@ import './Exercise.css'
 const Exercise = ({exercise, addToInfo}) => {
     const {name, img, time} = exercise;
     return (
-        <div className="col single_card">
+        <div className="col col-sm-6 col-md-6 col-lg-4 single_card">
             <div className="card shadow-sm border-0">
                 <img src={img} className="card-img-top" alt=""/>
                 <div className="card-body">

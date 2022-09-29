@@ -1,15 +1,12 @@
 .information {
-    position: sticky;
-    top: 0;
     padding: 30px;
     background-color: rgb(253, 234, 234);
-    height: 100vh;
 }
 .user_info {
     margin-bottom: 40px;
 }
 .user_info .profile {
-    padding: 40px 20px;
+    padding: 30px 20px;
     margin-top: 20px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.062);
@@ -44,6 +41,7 @@
     padding: 10px 5px;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
 }
 .break_time span {

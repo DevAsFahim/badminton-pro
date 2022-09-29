@@ -1,4 +1,22 @@
 .exercises .container {
-    display: grid;
-    grid-template-columns: 7fr 3fr;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.information-container {
+    flex-basis: 30%;
+}
+.exercise-container {
+    flex-basis: 70%;
+}
+@media screen and (max-width: 991px) {
+    .exercises .container {
+        flex-direction: column !important;
+    }
+    .exercises .information-container {
+        flex-basis: 100%;
+    }
+    .exercises .exercise-container {
+        flex-basis: 100%;
+    }
 }
