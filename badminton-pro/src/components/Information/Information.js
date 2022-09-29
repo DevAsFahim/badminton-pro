@@ -1,11 +1,18 @@
 import React, { useState } from 'react';
 import './Information.css'
 import userImg from '../../image/my-image.jpg'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Information = (props) => {
     const [breakTime, setBreakTime] = useState(0);
     const addBreakTime = (time) => {
         setBreakTime(time)
+    }
+    const showToast = () => {
+        toast.success("Congratulations! your activity completed.", {
+            position: "top-center",
+        });
     }
     return (
         <div className='information'>
@@ -37,7 +44,8 @@ const Information = (props) => {
                 <p><strong>Exercise time:</strong> <span><b>{props.exerciseTime}</b> <small className="text-muted">minutes</small></span> </p>
                 <p><strong>Break time:</strong> <span><b>{breakTime}</b> <small className="text-muted">minutes</small></span> </p>
             </div>
-            <button className='btn btn-warning w-100 mt-5'>Activity Completed</button>
+            <button onClick={showToast} className='btn btn-warning w-100 mt-5'>Activity Completed</button>
+            <ToastContainer />
         </div>
     );
 };
