@@ -5,6 +5,38 @@
     background-color: rgb(253, 234, 234);
     height: 100vh;
 }
+.user_info {
+    margin-bottom: 40px;
+}
+.user_info .profile {
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.062);
+    background-color: rgb(243, 241, 241);
+}
+.user_info .profile p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+.user_info .user {
+    display: flex;
+    align-items: center;
+}
+.user_info .user h5 {
+    font-size: 18px;
+    color: blue;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.user_info .user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
 .break_time {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.062);
     background-color: rgb(243, 241, 241);
