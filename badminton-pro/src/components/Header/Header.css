@@ -1,0 +1,21 @@
+nav {
+    padding: 20px 0;
+    background-color: rgb(243, 231, 231);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.075);
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 45px;
+}
+.logo span {
+    font-weight: bold;
+    font-size: 25px;
+    font-weight: bold;
+    color: orange;
+}
+/* nav form input {
+    width: 220px !important;
+} */

@@ -1,10 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header/Header';
+import Exercises from './components/Exercises/Exercises';
 
 function App() {
   return (
-    <div className="App">
-      
+    <div>
+      <Header></Header>
+      <Exercises></Exercises>
     </div>
   );
 }
